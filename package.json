@@ -19,7 +19,7 @@
     "dev:agents": "mkdir -p .logs && portless run vite dev 2>&1 | tee .logs/dev-server.log",
     "dev:everyapp": "everyapp dev",
     "dev:agents:force": "mkdir -p .logs && portless --force run vite dev 2>&1 | tee .logs/dev-server.log",
-    "build": "pnpm build:report-widgets && vite build && tsc --noEmit",
+    "build": "npx --yes pnpm@10.30.1 run build:report-widgets && vite build && tsc --noEmit",
     "build:standalone": "pnpm build:report-widgets && vite build --mode standalone && node scripts/celld/package.mjs",
     "build:report-widgets": "tsc --noEmit -p tsconfig.report-widgets.json && vite build -c vite.report-widgets.config.ts",
     "lint": "oxlint . --type-aware",
