@@ -5,7 +5,7 @@
   "version": "0.1.19",
   "type": "module",
   "packageManager": "pnpm@10.30.1",
-     "devEngines": {
+  "devEngines": {
     "packageManager": {
       "name": "pnpm",
       "version": "10.30.1",
@@ -181,4 +181,4 @@
     "vitest": "^5.0.4",
     "wrangler": "^4.149.0"
   }
-  }
+}
